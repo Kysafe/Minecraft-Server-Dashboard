@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('/fonts/MinecraftTen-VGORe.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Minecrafter', sans-serif;
+    background-image: url('icon/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.server-icon {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.server-info {
+    flex-grow: 1;
+    margin-left: 1vw;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 15px;
+}
+
+h5 {
+    text-shadow: 0px 0px 0px;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.btn-outline-light {
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-secondary {
+    background-color: #18071aa1 !important;
+    border-width: 3px;
+    border-top-color: #00000047;
+}
+
+.custom-btn {
+    background-color: rgba(24, 7, 26, 0.63) !important;
+    color: white !important;
+    border: 2px solid #00000047 !important;
+    font-size: 1.5vw;
+    padding: 1vh 2vw;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-shadow: 0px 0px 15px rgb(243, 155, 243);
+}
+
+.custom-btn:hover {
+    background-color: rgba(24, 7, 26, 0.8) !important;
+    border-color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .custom-btn {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+    }
+
+    h5 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-btn {
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+}

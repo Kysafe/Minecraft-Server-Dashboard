@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uruchom serwery Minecraft</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-light" style="background-image: url('icon/background.png'); background-size: cover; background-attachment: fixed;">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <img src="icon/image.png" alt="logo na caly ekran" class="img-fluid">
+            </div>
+        </div>
+        <br>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="card bg-secondary text-light p-3 d-flex align-items-center flex-row">
+                    <img src="icon/BMC.webp" alt="Ikona serwera" class="server-icon mr-3">
+                    
+                    <div class="server-info flex-grow-1">
+                        <h5>Serwer Better MC</h5>
+                        <div id="status-serwermc" class="text-warning">
+                            <i class="fas fa-wifi"></i> Sprawdzanie statusu...
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-outline-light custom-btn" onclick="startServer('serwermc')">Uruchom serwer</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="card bg-secondary text-light p-3 d-flex align-items-center flex-row">
+                    <img src="icon/POKE.jpg" alt="Ikona serwera" class="server-icon mr-3">
+                    
+                    <div class="server-info flex-grow-1">
+                        <h5>Serwer Cobblemon</h5>
+                        <div id="status-serwermc2" class="text-warning">
+                            <i class="fas fa-wifi"></i> Sprawdzanie statusu...
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-light custom-btn" onclick="startServer('serwermc2')">Uruchom serwer</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <button class="btn btn-danger btn-block" onclick="stopServer()">Zamknij serwery</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
