@@ -26,7 +26,7 @@ Modify the server paths and domain in the Python script.
 python hosting.py
 ```
 4.2 Access the Dashboard
-Open your web browser and navigate to http://enterdomain:5000.
+Open your web browser and navigate to http://enterdomain.
 
 4.3 Manage Servers
 Use the buttons on the dashboard to start or stop the servers and check their status.
